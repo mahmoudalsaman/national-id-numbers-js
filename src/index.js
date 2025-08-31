@@ -19,6 +19,7 @@ import * as NGA from './nationalid/nga/national_id.js';
 import * as NPL from './nationalid/npl/national_id.js';
 import * as PAK from './nationalid/pak/national_id.js';
 import * as PHL from './nationalid/phl/phil_id.js';
+import * as SAU from './nationalid/sau/national_id.js';
 import * as THA from './nationalid/tha/national_id.js';
 import * as TUR from './nationalid/tur/national_id.js';
 import * as USA from './nationalid/usa/social_security.js';
@@ -44,6 +45,7 @@ const COUNTRY_MODULES = {
   NP: NPL,
   PK: PAK,
   PH: PHL,
+  SA: SAU,
   TH: THA,
   TR: TUR,
   US: USA,
@@ -109,6 +111,7 @@ export {
   NPL,
   PAK,
   PHL,
+  SAU,
   THA,
   TUR,
   USA,
