@@ -31,6 +31,7 @@ import { EGY, USA } from 'national-id-numbers';
 
 EGY.NationalID.validate('29001010100015');
 USA.SocialSecurityNumber.validate('012-12-0928');
+
 ```
 
 You can also import individual modules via sub-paths:
