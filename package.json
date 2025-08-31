@@ -2,6 +2,15 @@
   "name": "idnumbers-js",
   "version": "0.1.0",
   "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./nationalid/*": "./src/nationalid/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src"
+  ],
   "scripts": {
     "test": "node --test"
   }
