@@ -1,7 +1,24 @@
 {
-  "name": "idnumbers-js",
+  "name": "national-id-numbers",
   "version": "0.1.0",
+  "description": "Validate and parse national identification numbers by country code",
   "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./nationalid/*": "./src/nationalid/*"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "national",
+    "id",
+    "number",
+    "validation",
+    "parser"
+  ],
+  "license": "MIT",
   "scripts": {
     "test": "node --test"
   }
