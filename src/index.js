@@ -12,6 +12,7 @@ import * as IDN from './nationalid/idn/national_id.js';
 import * as IND from './nationalid/ind/national_id.js';
 import * as IRN from './nationalid/irn/national_id.js';
 import * as ITA from './nationalid/ita/fiscal_code.js';
+import * as JOR from './nationalid/jor/national_id.js';
 import * as LKA from './nationalid/lka/national_id.js';
 import * as LKAOld from './nationalid/lka/old_national_id.js';
 import * as MYS from './nationalid/mys/nric.js';
@@ -39,6 +40,7 @@ const COUNTRY_MODULES = {
   IN: IND,
   IR: IRN,
   IT: ITA,
+  JO: JOR,
   LK: LKA,
   MY: MYS,
   NG: NGA,
@@ -104,6 +106,7 @@ export {
   IND,
   IRN,
   ITA,
+  JOR,
   LKA,
   LKAOld,
   MYS,
