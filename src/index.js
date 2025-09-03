@@ -1,9 +1,12 @@
+import * as AFG from './nationalid/afg/national_id.js';
 import * as ALB from './nationalid/alb/identity_number.js';
 import * as ARE from './nationalid/are/emirates_id.js';
+import * as AUS from './nationalid/aus/tax_file_number.js';
 import * as BGD from './nationalid/bgd/national_id.js';
 import * as BGDOld from './nationalid/bgd/old_national_id.js';
 import * as CHN from './nationalid/chn/resident_id.js';
 import * as DEU from './nationalid/deu/tax_id.js';
+import * as DZA from './nationalid/dza/national_id.js';
 import * as EGY from './nationalid/egy/national_id.js';
 import * as ESP from './nationalid/esp/dni.js';
 import * as FRA from './nationalid/fra/insee.js';
@@ -27,11 +30,14 @@ import * as USA from './nationalid/usa/social_security.js';
 import * as VNM from './nationalid/vnm/national_id.js';
 
 const COUNTRY_MODULES = {
+  AF: AFG,
   AL: ALB,
   AE: ARE,
+  AU: AUS,
   BD: BGD,
   CN: CHN,
   DE: DEU,
+  DZ: DZA,
   EG: EGY,
   ES: ESP,
   FR: FRA,
@@ -92,12 +98,15 @@ export class NationalID {
 }
 
 export {
+  AFG,
   ALB,
   ARE,
+  AUS,
   BGD,
   BGDOld,
   CHN,
   DEU,
+  DZA,
   EGY,
   ESP,
   FRA,
