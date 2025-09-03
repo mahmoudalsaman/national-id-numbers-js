@@ -1,3 +1,4 @@
+import * as AFG from './nationalid/afg/national_id.js';
 import * as ALB from './nationalid/alb/identity_number.js';
 import * as ARE from './nationalid/are/emirates_id.js';
 import * as BGD from './nationalid/bgd/national_id.js';
@@ -27,6 +28,7 @@ import * as USA from './nationalid/usa/social_security.js';
 import * as VNM from './nationalid/vnm/national_id.js';
 
 const COUNTRY_MODULES = {
+  AF: AFG,
   AL: ALB,
   AE: ARE,
   BD: BGD,
@@ -92,6 +94,7 @@ export class NationalID {
 }
 
 export {
+  AFG,
   ALB,
   ARE,
   BGD,
