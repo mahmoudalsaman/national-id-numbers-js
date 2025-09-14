@@ -25,6 +25,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [0.4.0] - 2025-01-14
+
+### Added
+- **Canada (CA) Support**: Added SIN (Social Insurance Number) validation and parsing
+  - Format: `123-456-789`
+  - Length: 9 digits
+  - Checksum: Luhn Algorithm
+  - Parsing: Extracts area, group, and serial numbers
+  - Validation: Prevents invalid sequences (000, 666, 900-999)
+
+### Changed
+- **README.md**: Updated country tables to include Canada
+- **Country Count**: Now supports 27 countries (was 26)
+
+### Fixed
+- Nothing in this release
+
+### Security
+- Nothing in this release
+
 ## [0.3.0] - 2025-01-14
 
 ### Added
@@ -113,6 +133,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 0.4.0 | 2025-01-14 | 27 | Canada SIN support |
 | 0.3.0 | 2025-01-14 | 26 | Brazil support, comprehensive docs, country tables |
 | 0.2.0 | Previous | 25 | Core functionality, 25 countries, unified API |
 | 0.1.0 | Initial | 0 | Project setup, basic framework |

@@ -48,7 +48,7 @@ import { Gender, validateRegexp } from 'national-id-numbers';
 
 ## Supported Countries
 
-### Currently Implemented (26 countries)
+### Currently Implemented (27 countries)
 
 | Country | Code | Continent | ID Type | Format Example | Status |
 |---------|------|-----------|---------|----------------|--------|
@@ -78,6 +78,7 @@ import { Gender, validateRegexp } from 'national-id-numbers';
 | United States | US | North America | Social Security | 123-45-6789 | ✅ Implemented |
 | Vietnam | VN | Asia | National ID | 123456789 | ✅ Implemented |
 | Brazil | BR | South America | CPF | 123.456.789-09 | ✅ Implemented |
+| Canada | CA | North America | SIN | 123-456-789 | ✅ Implemented |
 
 ### Missing Countries (High Priority)
 
@@ -88,7 +89,6 @@ import { Gender, validateRegexp } from 'national-id-numbers';
 | Austria | AT | Europe | Personalausweis | 1234567890 | ❌ Missing |
 | Belgium | BE | Europe | National Number | 12.34.56-789.01 | ❌ Missing |
 | Bulgaria | BG | Europe | ЕГН | 1234567890 | ❌ Missing |
-| Canada | CA | North America | SIN | 123-456-789 | ❌ Missing |
 | Chile | CL | South America | RUT | 12.345.678-9 | ❌ Missing |
 | Colombia | CO | South America | Cédula | 1234567890 | ❌ Missing |
 | Croatia | HR | Europe | OIB | 12345678901 | ❌ Missing |
