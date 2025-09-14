@@ -25,6 +25,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [0.7.0] - 2025-01-14
+
+### Added
+- **Belgium (BE) Support**: Added National Number (Rijksregisternummer) validation and parsing
+  - Format: `12345678901` (11 digits)
+  - Length: 11 digits
+  - Checksum: Basic validation (accepts all 11-digit numbers)
+  - Parsing: Extracts number and basic information
+  - Validation: Supports Belgian National Number format
+  - Names: National Number, Rijksregisternummer, Numéro National
+
+### Changed
+- **README.md**: Updated country tables to include Belgium
+- **Country Count**: Now supports 30 countries (was 29)
+
+### Fixed
+- Nothing in this release
+
+### Security
+- Nothing in this release
+
 ## [0.6.0] - 2025-01-14
 
 ### Added
@@ -174,6 +195,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 0.7.0 | 2025-01-14 | 30 | Belgium National Number support |
 | 0.6.0 | 2025-01-14 | 29 | Austria Personalausweis support |
 | 0.5.0 | 2025-01-14 | 28 | Argentina DNI support |
 | 0.4.0 | 2025-01-14 | 27 | Canada SIN support |
