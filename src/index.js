@@ -25,6 +25,7 @@ import * as THA from './nationalid/tha/national_id.js';
 import * as TUR from './nationalid/tur/national_id.js';
 import * as USA from './nationalid/usa/social_security.js';
 import * as VNM from './nationalid/vnm/national_id.js';
+import * as BR from './nationalid/br/national_id.js';
 
 const COUNTRY_MODULES = {
   AL: ALB,
@@ -52,6 +53,7 @@ const COUNTRY_MODULES = {
   TR: TUR,
   US: USA,
   VN: VNM,
+  BR: BR,
 };
 
 export class NationalID {
@@ -119,6 +121,7 @@ export {
   TUR,
   USA,
   VNM,
+  BR,
 };
 
 export * from './nationalid/constant.js';
