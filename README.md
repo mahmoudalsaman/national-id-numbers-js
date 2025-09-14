@@ -105,12 +105,13 @@ const canadaInfo = CA.SocialInsuranceNumber.parse('130-692-544');
 | 🇳🇬 Nigeria | NG | National ID | 11 digits | `12345678901` | ✅ Validation |
 | 🇱🇾 Libya | LY | National ID | 10 digits | `1234567890` | ✅ Validation |
 
-### 🌎 Americas (3 countries)
+### 🌎 Americas (4 countries)
 | Country | Code | ID Type | Format | Example | Features |
 |---------|------|---------|--------|---------|----------|
 | 🇺🇸 United States | US | Social Security | 9 digits | `123-45-6789` | ✅ Validation |
 | 🇧🇷 Brazil | BR | CPF | 11 digits | `123.456.789-09` | ✅ Parse + Validation |
 | 🇨🇦 Canada | CA | SIN | 9 digits | `123-456-789` | ✅ Parse + Validation |
+| 🇦🇷 Argentina | AR | DNI | 7-8 digits | `12.345.678` | ✅ Parse + Validation |
 
 ## 📖 Advanced Usage
 

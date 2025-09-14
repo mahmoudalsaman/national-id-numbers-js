@@ -25,6 +25,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [0.5.0] - 2025-01-14
+
+### Added
+- **Argentina (AR) Support**: Added DNI (Documento Nacional de Identidad) validation and parsing
+  - Format: `12.345.678` or `12345678` (7-8 digits)
+  - Length: 7-8 digits
+  - Checksum: Modulo 11 algorithm
+  - Parsing: Extracts number and basic information
+  - Validation: Supports both dotted and non-dotted formats
+
+### Changed
+- **README.md**: Updated country tables to include Argentina
+- **Country Count**: Now supports 28 countries (was 27)
+
+### Fixed
+- Nothing in this release
+
+### Security
+- Nothing in this release
+
 ## [0.4.0] - 2025-01-14
 
 ### Added
@@ -133,6 +153,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 0.5.0 | 2025-01-14 | 28 | Argentina DNI support |
 | 0.4.0 | 2025-01-14 | 27 | Canada SIN support |
 | 0.3.0 | 2025-01-14 | 26 | Brazil support, comprehensive docs, country tables |
 | 0.2.0 | Previous | 25 | Core functionality, 25 countries, unified API |
