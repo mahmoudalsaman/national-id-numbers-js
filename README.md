@@ -68,12 +68,13 @@ const canadaInfo = CA.SocialInsuranceNumber.parse('130-692-544');
 
 ## 🌍 Supported Countries
 
-### 🇪🇺 Europe (13 countries)
+### 🇪🇺 Europe (14 countries)
 | Country | Code | ID Type | Format | Example | Features |
 |---------|------|---------|--------|---------|----------|
 | 🇦🇱 Albania | AL | Identity Number | 13 digits | `1234567890123` | ✅ Validation |
 | 🇦🇹 Austria | AT | Personalausweis | 10 digits | `1234567890` | ✅ Parse + Validation |
 | 🇧🇪 Belgium | BE | National Number | 11 digits | `12345678901` | ✅ Parse + Validation |
+| 🇧🇬 Bulgaria | BG | EGN | 10 digits | `1234567890` | ✅ Parse + Validation |
 | 🇩🇪 Germany | DE | Tax ID | 11 digits | `12345678901` | ✅ Validation |
 | 🇪🇸 Spain | ES | DNI | 8 digits + letter | `12345678Z` | ✅ Validation |
 | 🇫🇷 France | FR | INSEE | 13 digits | `1234567890123` | ✅ Parse + Validation |

@@ -25,6 +25,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [0.8.0] - 2025-01-14
+
+### Added
+- **Bulgaria (BG) Support**: Added EGN (ЕГН) validation and parsing
+  - Format: `1234567890` (10 digits)
+  - Length: 10 digits
+  - Checksum: Basic validation (accepts all 10-digit numbers)
+  - Parsing: Extracts number and basic information
+  - Validation: Supports Bulgarian EGN format
+  - Names: ЕГН, EGN, Единен граждански номер, Unified Civil Number
+
+### Changed
+- **README.md**: Updated country tables to include Bulgaria
+- **Country Count**: Now supports 31 countries (was 30)
+
+### Fixed
+- Nothing in this release
+
+### Security
+- Nothing in this release
+
 ## [0.7.0] - 2025-01-14
 
 ### Added
@@ -195,6 +216,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 0.8.0 | 2025-01-14 | 31 | Bulgaria EGN support |
 | 0.7.0 | 2025-01-14 | 30 | Belgium National Number support |
 | 0.6.0 | 2025-01-14 | 29 | Austria Personalausweis support |
 | 0.5.0 | 2025-01-14 | 28 | Argentina DNI support |
