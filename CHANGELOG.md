@@ -25,6 +25,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [0.9.0] - 2025-09-14
+
+### Added
+- **Denmark (DK) Support**: Added CPR Number validation and parsing
+  - Format: `1234567890` or `123456-7890` (10 digits with optional dash)
+  - Length: 10-11 characters (with optional dash)
+  - Checksum: Basic validation (accepts all 10-digit numbers)
+  - Parsing: Extracts number and basic information
+  - Validation: Supports Danish CPR Number format
+  - Names: CPR Number, Central Person Register, Personnummer
+
+### Changed
+- **README.md**: Updated country tables to include Denmark
+- **Country Count**: Now supports 32 countries (was 31)
+
+### Fixed
+- Nothing in this release
+
+### Security
+- Nothing in this release
+
 ## [0.8.0] - 2025-01-14
 
 ### Added
@@ -216,6 +237,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 0.9.0 | 2025-01-14 | 32 | Denmark CPR Number support |
 | 0.8.0 | 2025-01-14 | 31 | Bulgaria EGN support |
 | 0.7.0 | 2025-01-14 | 30 | Belgium National Number support |
 | 0.6.0 | 2025-01-14 | 29 | Austria Personalausweis support |

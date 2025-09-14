@@ -31,6 +31,7 @@ import * as AR from './nationalid/ar/national_id.js';
 import * as AT from './nationalid/at/personalausweis.js';
 import * as BE from './nationalid/be/national_number.js';
 import * as BG from './nationalid/bg/egn.js';
+import * as DK from './nationalid/dk/cpr_number.js';
 
 const COUNTRY_MODULES = {
   AL: ALB,
@@ -64,6 +65,7 @@ const COUNTRY_MODULES = {
   AT: AT,
   BE: BE,
   BG: BG,
+  DK: DK,
 };
 
 export class NationalID {
@@ -137,6 +139,7 @@ export {
   AT,
   BE,
   BG,
+  DK,
 };
 
 export * from './nationalid/constant.js';
