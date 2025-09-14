@@ -25,6 +25,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [1.0.0] - 2025-01-14
+
+### Added
+- **Finland (FI) Support**: Added Henkilötunnus validation and parsing
+  - Format: `123456-789A`, `123456+789B`, or `123456A789C` (11 characters)
+  - Length: 11 characters
+  - Checksum: Basic validation (accepts all valid format numbers)
+  - Parsing: Extracts number and basic information
+  - Validation: Supports Finnish Henkilötunnus format
+  - Names: Henkilötunnus, Personal Identity Code, Finnish Personal ID
+
+### Changed
+- **README.md**: Updated country tables to include Finland
+- **Country Count**: Now supports 33 countries (was 32)
+- **Major Version**: Bumped to 1.0.0 for stable release
+
+### Fixed
+- Nothing in this release
+
+### Security
+- Nothing in this release
+
 ## [0.9.0] - 2025-09-14
 
 ### Added
@@ -237,6 +259,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 1.0.0 | 2025-01-14 | 33 | Finland Henkilötunnus support, stable release |
 | 0.9.0 | 2025-01-14 | 32 | Denmark CPR Number support |
 | 0.8.0 | 2025-01-14 | 31 | Bulgaria EGN support |
 | 0.7.0 | 2025-01-14 | 30 | Belgium National Number support |
