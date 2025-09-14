@@ -25,6 +25,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [1.2.0] - 2025-01-14
+
+### Added
+- **Sweden (SE) Support**: Added Personnummer validation and parsing
+  - Format: `123456-7893` or `123456+7893` (11 characters)
+  - Length: 11 characters
+  - Checksum: Luhn algorithm for validation
+  - Parsing: Extracts number, gender, birth date, and individual number
+  - Gender Detection: Based on 3rd digit of individual number (even = female, odd = male)
+  - Validation: Supports Swedish Personnummer format with separators
+  - Names: Personnummer, Swedish Personal Number, Personal Identity Number
+
+### Changed
+- **README.md**: Updated country tables to include Sweden
+- **Country Count**: Now supports 35 countries (was 34)
+- **Minor Version**: Bumped to 1.2.0 for new feature
+
+### Fixed
+- Nothing in this release
+
+### Security
+- Nothing in this release
+
 ## [1.1.0] - 2025-01-14
 
 ### Added
@@ -282,6 +305,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 1.2.0 | 2025-01-14 | 35 | Sweden Personnummer support |
 | 1.1.0 | 2025-01-14 | 34 | Norway Fødselsnummer support |
 | 1.0.0 | 2025-01-14 | 33 | Finland Henkilötunnus support, stable release |
 | 0.9.0 | 2025-01-14 | 32 | Denmark CPR Number support |
