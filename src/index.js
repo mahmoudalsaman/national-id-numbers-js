@@ -33,6 +33,7 @@ import * as BE from './nationalid/be/national_number.js';
 import * as BG from './nationalid/bg/egn.js';
 import * as DK from './nationalid/dk/cpr_number.js';
 import * as FI from './nationalid/fi/henkilotunnus.js';
+import * as NO from './nationalid/no/fodselsnummer.js';
 
 const COUNTRY_MODULES = {
   AL: ALB,
@@ -68,6 +69,7 @@ const COUNTRY_MODULES = {
   BG: BG,
   DK: DK,
   FI: FI,
+  NO: NO,
 };
 
 export class NationalID {
@@ -143,6 +145,7 @@ export {
   BG,
   DK,
   FI,
+  NO,
 };
 
 export * from './nationalid/constant.js';

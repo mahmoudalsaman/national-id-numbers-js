@@ -25,6 +25,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [1.1.0] - 2025-01-14
+
+### Added
+- **Norway (NO) Support**: Added Fødselsnummer validation and parsing
+  - Format: `12345678901` (11 digits)
+  - Length: 11 digits
+  - Checksum: Modulo 11 algorithm with weights [3, 7, 6, 1, 8, 9, 4, 5, 2]
+  - Parsing: Extracts number, gender, birth date, and individual number
+  - Gender Detection: Based on 3rd digit of individual number (even = female, odd = male)
+  - Validation: Supports Norwegian Fødselsnummer format
+  - Names: Fødselsnummer, Norwegian Personal Number, Birth Number
+
+### Changed
+- **README.md**: Updated country tables to include Norway
+- **Country Count**: Now supports 34 countries (was 33)
+- **Minor Version**: Bumped to 1.1.0 for new feature
+
+### Fixed
+- Nothing in this release
+
+### Security
+- Nothing in this release
+
 ## [1.0.0] - 2025-01-14
 
 ### Added
@@ -259,6 +282,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 1.1.0 | 2025-01-14 | 34 | Norway Fødselsnummer support |
 | 1.0.0 | 2025-01-14 | 33 | Finland Henkilötunnus support, stable release |
 | 0.9.0 | 2025-01-14 | 32 | Denmark CPR Number support |
 | 0.8.0 | 2025-01-14 | 31 | Bulgaria EGN support |
