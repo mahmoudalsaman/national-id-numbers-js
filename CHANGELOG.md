@@ -25,6 +25,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [0.6.0] - 2025-01-14
+
+### Added
+- **Austria (AT) Support**: Added Personalausweis (Austrian ID Card) validation and parsing
+  - Format: `1234567890` (10 digits)
+  - Length: 10 digits
+  - Checksum: Basic validation (accepts all 10-digit numbers)
+  - Parsing: Extracts number and basic information
+  - Validation: Supports Austrian Personalausweis format
+  - Names: Personalausweis, Austrian ID Card, Österreichischer Personalausweis
+
+### Changed
+- **README.md**: Updated country tables to include Austria
+- **Country Count**: Now supports 29 countries (was 28)
+
+### Fixed
+- Nothing in this release
+
+### Security
+- Nothing in this release
+
 ## [0.5.0] - 2025-01-14
 
 ### Added
@@ -153,6 +174,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 0.6.0 | 2025-01-14 | 29 | Austria Personalausweis support |
 | 0.5.0 | 2025-01-14 | 28 | Argentina DNI support |
 | 0.4.0 | 2025-01-14 | 27 | Canada SIN support |
 | 0.3.0 | 2025-01-14 | 26 | Brazil support, comprehensive docs, country tables |
