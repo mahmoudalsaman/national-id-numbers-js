@@ -25,6 +25,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [1.5.0] - 2025-01-14
+
+### Added
+- **Czech Republic (CZ) Support**: Added Rodné číslo validation and parsing
+  - Format: `1234567890` (9-10 digits)
+  - Length: 9-10 digits (padded to 10 for checksum)
+  - Checksum: Modulo 11 algorithm with weights [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  - Parsing: Extracts number, gender, birth date, year, month, and day
+  - Gender Detection: Based on month range (51-62, 71-82 = female)
+  - Birth Date: Supports 1900s and 2000s centuries
+  - Validation: Supports Czech Rodné číslo format
+  - Names: Rodné číslo, Czech Birth Number, Czech National ID
+
+### Changed
+- **README.md**: Updated country tables to include Czech Republic
+- **Country Count**: Increased from 37 to 38 countries
+
+### Technical Details
+- **Algorithm**: Modulo 11 checksum with specific weights
+- **Century Detection**: Month-based century determination
+- **Gender Detection**: Month range parity check
+- **Date Parsing**: Full birth date extraction with century handling
+
 ## [1.4.0] - 2025-01-14
 
 ### Added
@@ -350,6 +373,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 1.5.0 | 2025-01-14 | 38 | Czech Republic Rodné číslo support |
 | 1.4.0 | 2025-01-14 | 37 | Poland PESEL support |
 | 1.3.0 | 2025-01-14 | 36 | Netherlands BSN support |
 | 1.2.0 | 2025-01-14 | 35 | Sweden Personnummer support |
