@@ -41,6 +41,7 @@ import * as CZ from './nationalid/cz/rodne_cislo.js';
 import * as HU from './nationalid/hu/szemelyi_szam.js';
 import * as RO from './nationalid/ro/cnp.js';
 import * as SK from './nationalid/sk/rodne_cislo.js';
+import * as MA from './nationalid/ma/cin.js';
 
 const COUNTRY_MODULES = {
   AL: ALB,
@@ -84,6 +85,7 @@ const COUNTRY_MODULES = {
   HU: HU,
   RO: RO,
   SK: SK,
+  MA: MA,
 };
 
 export class NationalID {
@@ -167,6 +169,7 @@ export {
   HU,
   RO,
   SK,
+  MA,
 };
 
 export * from './nationalid/constant.js';

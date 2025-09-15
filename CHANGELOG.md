@@ -25,6 +25,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [1.9.0] - 2025-01-14
+
+### Added
+- **Morocco (MA) Support**: Added CIN validation and parsing
+  - Format: `123456789012` (12 digits)
+  - Length: 12 digits
+  - Checksum: Luhn algorithm
+  - Parsing: Extracts number, gender, birth date, year, month, and day
+  - Gender Detection: Based on serial number parity (even = female, odd = male)
+  - Birth Date: Supports 1900s and 2000s centuries
+  - Validation: Supports Moroccan CIN format
+  - Names: CIN, Carte d'Identité Nationale, Moroccan National ID
+
+### Changed
+- **README.md**: Updated country tables to include Morocco
+- **Country Count**: Increased from 42 to 43 countries
+
+### Technical Details
+- **Algorithm**: Luhn checksum with proper digit array handling
+- **Century Detection**: Year range-based century determination
+- **Gender Detection**: Serial number parity check
+- **Date Parsing**: Full birth date extraction with century handling
+
 ## [1.8.0] - 2025-01-14
 
 ### Added
@@ -446,6 +469,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 1.9.0 | 2025-01-14 | 43 | Morocco CIN support |
 | 1.8.0 | 2025-01-14 | 41 | Slovakia Rodné číslo support + README stats fix |
 | 1.7.0 | 2025-01-14 | 40 | Romania CNP support |
 | 1.6.0 | 2025-01-14 | 39 | Hungary Személyi szám support |

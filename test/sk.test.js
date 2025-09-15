@@ -4,8 +4,8 @@ import { RodneCislo, NationalID } from '../src/nationalid/sk/rodne_cislo.js';
 import { Gender } from '../src/nationalid/constant.js';
 
 test('valid Slovak Rodné číslo numbers', () => {
-  assert.strictEqual(RodneCislo.validate('1204156785'), true);
-  assert.strictEqual(RodneCislo.validate('9856012341'), true);
+    assert.strictEqual(RodneCislo.validate('1204156785'), true);
+    assert.strictEqual(RodneCislo.validate('9856012341'), true);
 });
 
 test('invalid Slovak Rodné číslo numbers', () => {
@@ -24,9 +24,9 @@ test('invalid Slovak Rodné číslo numbers', () => {
 });
 
 test('parse Slovak Rodné číslo', () => {
-  const result = RodneCislo.parse('1204156785');
-  assert.ok(result);
-  assert.strictEqual(result.number, '1204156785');
+    const result = RodneCislo.parse('1204156785');
+    assert.ok(result);
+    assert.strictEqual(result.number, '1204156785');
     assert.ok(result.gender === Gender.MALE || result.gender === Gender.FEMALE);
     assert.ok(result.birthDate);
     assert.ok(result.year);
@@ -35,14 +35,14 @@ test('parse Slovak Rodné číslo', () => {
 });
 
 test('parse different formats', () => {
-  // Test with different Rodné číslo numbers
-  const result1 = RodneCislo.parse('1204156785');
-  assert.ok(result1);
-  assert.strictEqual(result1.number, '1204156785');
+    // Test with different Rodné číslo numbers
+    const result1 = RodneCislo.parse('1204156785');
+    assert.ok(result1);
+    assert.strictEqual(result1.number, '1204156785');
 
-  const result2 = RodneCislo.parse('9856012341');
-  assert.ok(result2);
-  assert.strictEqual(result2.number, '9856012341');
+    const result2 = RodneCislo.parse('9856012341');
+    assert.ok(result2);
+    assert.strictEqual(result2.number, '9856012341');
 });
 
 test('invalid parse Slovak Rodné číslo', () => {
@@ -54,8 +54,8 @@ test('invalid parse Slovak Rodné číslo', () => {
 });
 
 test('with regexp', () => {
-  assert.match('1204156785', RodneCislo.METADATA.regexp);
-  assert.match('9856012341', RodneCislo.METADATA.regexp);
+    assert.match('1204156785', RodneCislo.METADATA.regexp);
+    assert.match('9856012341', RodneCislo.METADATA.regexp);
 });
 
 test('with metadata', () => {
@@ -76,9 +76,9 @@ test('alias of', () => {
 });
 
 test('checksum validation', () => {
-  // Valid Rodné číslo
-  assert.strictEqual(RodneCislo.checksum('1204156785'), true);
-  assert.strictEqual(RodneCislo.checksum('9856012341'), true);
+    // Valid Rodné číslo
+    assert.strictEqual(RodneCislo.checksum('1204156785'), true);
+    assert.strictEqual(RodneCislo.checksum('9856012341'), true);
 
     // Invalid format
     assert.strictEqual(RodneCislo.checksum('123456789'), false); // Too short
@@ -91,10 +91,10 @@ test('checksum validation', () => {
 });
 
 test('gender detection', () => {
-  // Test gender detection based on month range
-  const result1 = RodneCislo.parse('1204156785');
-  if (result1) {
-    const month = parseInt(result1.number.slice(2, 4));
+    // Test gender detection based on month range
+    const result1 = RodneCislo.parse('1204156785');
+    if (result1) {
+        const month = parseInt(result1.number.slice(2, 4));
         const expectedGender = (month >= 51 && month <= 62) ? Gender.FEMALE : Gender.MALE;
         assert.strictEqual(result1.gender, expectedGender);
     }
@@ -108,9 +108,9 @@ test('gender detection', () => {
 });
 
 test('birth date parsing', () => {
-  // Test birth date extraction
-  const result = RodneCislo.parse('1204156785');
-  if (result) {
+    // Test birth date extraction
+    const result = RodneCislo.parse('1204156785');
+    if (result) {
         assert.ok(result.birthDate);
         assert.ok(result.year);
         assert.ok(result.month);
