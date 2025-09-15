@@ -38,6 +38,7 @@ import * as SE from './nationalid/se/personnummer.js';
 import * as NL from './nationalid/nl/bsn.js';
 import * as PL from './nationalid/pl/pesel.js';
 import * as CZ from './nationalid/cz/rodne_cislo.js';
+import * as HU from './nationalid/hu/szemelyi_szam.js';
 
 const COUNTRY_MODULES = {
   AL: ALB,
@@ -78,6 +79,7 @@ const COUNTRY_MODULES = {
   NL: NL,
   PL: PL,
   CZ: CZ,
+  HU: HU,
 };
 
 export class NationalID {
@@ -158,6 +160,7 @@ export {
   NL,
   PL,
   CZ,
+  HU,
 };
 
 export * from './nationalid/constant.js';
