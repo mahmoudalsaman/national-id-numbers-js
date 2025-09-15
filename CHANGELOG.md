@@ -25,6 +25,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [1.4.0] - 2025-01-14
+
+### Added
+- **Poland (PL) Support**: Added PESEL validation and parsing
+  - Format: `12345678903` (11 digits)
+  - Length: 11 digits
+  - Checksum: Modulo 10 algorithm with weights [1, 3, 7, 9, 1, 3, 7, 9, 1, 3]
+  - Parsing: Extracts number, gender, birth date, year, month, and day
+  - Gender Detection: Based on 10th digit (odd = male, even = female)
+  - Birth Date: Supports multiple centuries (1800s, 1900s, 2000s, 2100s, 2200s)
+  - Validation: Supports Polish PESEL format
+  - Names: PESEL, Polish National Identification Number, Universal Electronic System for Registration of Population
+
+### Changed
+- **README.md**: Updated country tables to include Poland
+- **Country Count**: Increased from 36 to 37 countries
+
+### Technical Details
+- **Algorithm**: Modulo 10 checksum with specific weights
+- **Century Detection**: Month-based century determination
+- **Gender Detection**: 10th digit parity check
+- **Date Parsing**: Full birth date extraction with century handling
+
 ## [1.3.0] - 2025-01-14
 
 ### Added
@@ -327,6 +350,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 1.4.0 | 2025-01-14 | 37 | Poland PESEL support |
 | 1.3.0 | 2025-01-14 | 36 | Netherlands BSN support |
 | 1.2.0 | 2025-01-14 | 35 | Sweden Personnummer support |
 | 1.1.0 | 2025-01-14 | 34 | Norway Fødselsnummer support |
