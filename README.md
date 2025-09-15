@@ -11,7 +11,7 @@
 
 ## ✨ Features
 
-- 🌍 **27 Countries Supported** - Comprehensive coverage across 6 continents
+- 🌍 **42 Countries Supported** - Comprehensive coverage across 6 continents
 - 🔍 **Smart Validation** - Advanced algorithms including Luhn, Modulo 11, and custom checksums
 - 📊 **Data Extraction** - Parse birth dates, gender, regions, and more from ID numbers
 - 🚀 **Zero Dependencies** - Lightweight and fast with no external dependencies
@@ -68,7 +68,7 @@ const canadaInfo = CA.SocialInsuranceNumber.parse('130-692-544');
 
 ## 🌍 Supported Countries
 
-### 🇪🇺 Europe (23 countries)
+### 🇪🇺 Europe (24 countries)
 | Country | Code | ID Type | Format | Example | Features |
 |---------|------|---------|--------|---------|----------|
 | 🇦🇱 Albania | AL | Identity Number | 13 digits | `1234567890123` | ✅ Validation |
@@ -84,6 +84,7 @@ const canadaInfo = CA.SocialInsuranceNumber.parse('130-692-544');
 | 🇨🇿 Czech Republic | CZ | Rodné číslo | 9-10 digits | `1234567890` | ✅ Parse + Validation |
 | 🇭🇺 Hungary | HU | Személyi szám | 11 digits | `12345678905` | ✅ Parse + Validation |
 | 🇷🇴 Romania | RO | CNP | 13 digits | `1234567890123` | ✅ Parse + Validation |
+| 🇸🇰 Slovakia | SK | Rodné číslo | 10 digits | `1204156785` | ✅ Parse + Validation |
 | 🇩🇪 Germany | DE | Tax ID | 11 digits | `12345678901` | ✅ Validation |
 | 🇪🇸 Spain | ES | DNI | 8 digits + letter | `12345678Z` | ✅ Validation |
 | 🇫🇷 France | FR | INSEE | 13 digits | `1234567890123` | ✅ Parse + Validation |

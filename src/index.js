@@ -40,6 +40,7 @@ import * as PL from './nationalid/pl/pesel.js';
 import * as CZ from './nationalid/cz/rodne_cislo.js';
 import * as HU from './nationalid/hu/szemelyi_szam.js';
 import * as RO from './nationalid/ro/cnp.js';
+import * as SK from './nationalid/sk/rodne_cislo.js';
 
 const COUNTRY_MODULES = {
   AL: ALB,
@@ -82,6 +83,7 @@ const COUNTRY_MODULES = {
   CZ: CZ,
   HU: HU,
   RO: RO,
+  SK: SK,
 };
 
 export class NationalID {
@@ -164,6 +166,7 @@ export {
   CZ,
   HU,
   RO,
+  SK,
 };
 
 export * from './nationalid/constant.js';

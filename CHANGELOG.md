@@ -25,6 +25,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [1.8.0] - 2025-01-14
+
+### Added
+- **Slovakia (SK) Support**: Added Rodné číslo validation and parsing
+  - Format: `1204156785` (10 digits)
+  - Length: 10 digits
+  - Checksum: Modulo 11 algorithm with weights [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  - Parsing: Extracts number, gender, birth date, year, month, and day
+  - Gender Detection: Based on month range (51-62 = female 2000s, 21-32 = female 2000s, 1-12 = male 1900s)
+  - Birth Date: Supports 1900s and 2000s centuries
+  - Validation: Supports Slovak Rodné číslo format
+  - Names: Rodné číslo, Slovak Personal Number, Slovak National ID
+
+### Changed
+- **README.md**: Updated country tables to include Slovakia
+- **README.md**: Fixed comprehensive statistics (27 → 42 countries)
+- **Country Count**: Increased from 40 to 41 countries
+
+### Fixed
+- **README.md Statistics**: Corrected total country count from 27 to 42
+
+### Technical Details
+- **Algorithm**: Modulo 11 checksum with sequential weights
+- **Century Detection**: Month-based century determination
+- **Gender Detection**: Month range analysis
+- **Date Parsing**: Full birth date extraction with century handling
+
 ## [1.7.0] - 2025-01-14
 
 ### Added
@@ -419,6 +446,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 1.8.0 | 2025-01-14 | 41 | Slovakia Rodné číslo support + README stats fix |
 | 1.7.0 | 2025-01-14 | 40 | Romania CNP support |
 | 1.6.0 | 2025-01-14 | 39 | Hungary Személyi szám support |
 | 1.5.0 | 2025-01-14 | 38 | Czech Republic Rodné číslo support |
