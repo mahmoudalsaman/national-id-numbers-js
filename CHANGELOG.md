@@ -25,6 +25,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [1.7.0] - 2025-01-14
+
+### Added
+- **Romania (RO) Support**: Added CNP validation and parsing
+  - Format: `1234567890123` (13 digits)
+  - Length: 13 digits
+  - Checksum: Modulo 11 algorithm with weights [2, 7, 9, 1, 4, 6, 3, 5, 8, 2, 7, 9]
+  - Parsing: Extracts number, gender, birth date, year, month, and day
+  - Gender Detection: Based on first digit (1,3,5,7 = male; 2,4,6,8 = female)
+  - Birth Date: Supports 1800s, 1900s, and 2000s centuries
+  - Validation: Supports Romanian CNP format
+  - Names: CNP, Cod Numeric Personal, Romanian Personal Numeric Code
+
+### Changed
+- **README.md**: Updated country tables to include Romania
+- **Country Count**: Increased from 39 to 40 countries
+
+### Technical Details
+- **Algorithm**: Modulo 11 checksum with specific weights
+- **Century Detection**: First digit-based century determination
+- **Gender Detection**: First digit parity check
+- **Date Parsing**: Full birth date extraction with century handling
+
 ## [1.6.0] - 2025-01-14
 
 ### Added
@@ -396,6 +419,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 1.7.0 | 2025-01-14 | 40 | Romania CNP support |
 | 1.6.0 | 2025-01-14 | 39 | Hungary Személyi szám support |
 | 1.5.0 | 2025-01-14 | 38 | Czech Republic Rodné číslo support |
 | 1.4.0 | 2025-01-14 | 37 | Poland PESEL support |
