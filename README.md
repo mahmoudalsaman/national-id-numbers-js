@@ -11,7 +11,7 @@
 
 ## ✨ Features
 
-- 🌍 **43 Countries Supported** - Comprehensive coverage across 6 continents
+- 🌍 **44 Countries Supported** - Comprehensive coverage across 6 continents
 - 🔍 **Smart Validation** - Advanced algorithms including Luhn, Modulo 11, and custom checksums
 - 📊 **Data Extraction** - Parse birth dates, gender, regions, and more from ID numbers
 - 🚀 **Zero Dependencies** - Lightweight and fast with no external dependencies
@@ -111,13 +111,14 @@ const canadaInfo = CA.SocialInsuranceNumber.parse('130-692-544');
 | 🇹🇭 Thailand | TH | National ID | 13 digits | `1234567890123` | ✅ Parse + Validation |
 | 🇻🇳 Vietnam | VN | National ID | 9 digits | `123456789` | ✅ Parse + Validation |
 
-### 🌍 Africa (3 countries)
+### 🌍 Africa (4 countries)
 | Country | Code | ID Type | Format | Example | Features |
 |---------|------|---------|--------|---------|----------|
 | 🇪🇬 Egypt | EG | National ID | 14 digits | `29001010100015` | ✅ Parse + Validation |
 | 🇱🇾 Libya | LY | National ID | 10 digits | `1234567890` | ✅ Validation |
 | 🇲🇦 Morocco | MA | CIN | 12 digits | `123456789012` | ✅ Parse + Validation |
 | 🇳🇬 Nigeria | NG | National ID | 11 digits | `12345678901` | ✅ Validation |
+| 🇹🇳 Tunisia | TN | CIN | 8 digits | `12345679` | ✅ Parse + Validation |
 
 ### 🌎 Americas (4 countries)
 | Country | Code | ID Type | Format | Example | Features |
