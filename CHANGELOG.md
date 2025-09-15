@@ -25,6 +25,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [1.3.0] - 2025-01-14
+
+### Added
+- **Netherlands (NL) Support**: Added BSN validation and parsing
+  - Format: `123456782` (9 digits)
+  - Length: 9 digits
+  - Checksum: Modulo 11 algorithm with weights [9, 8, 7, 6, 5, 4, 3, 2, -1]
+  - Parsing: Extracts number and basic information
+  - Validation: Supports Dutch BSN format
+  - Names: BSN, Burgerservicenummer, Dutch Social Security Number
+
+### Changed
+- **README.md**: Updated country tables to include Netherlands
+- **Country Count**: Now supports 36 countries (was 35)
+- **Minor Version**: Bumped to 1.3.0 for new feature
+
+### Fixed
+- Nothing in this release
+
+### Security
+- Nothing in this release
+
 ## [1.2.0] - 2025-01-14
 
 ### Added
@@ -305,6 +327,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 1.3.0 | 2025-01-14 | 36 | Netherlands BSN support |
 | 1.2.0 | 2025-01-14 | 35 | Sweden Personnummer support |
 | 1.1.0 | 2025-01-14 | 34 | Norway Fødselsnummer support |
 | 1.0.0 | 2025-01-14 | 33 | Finland Henkilötunnus support, stable release |

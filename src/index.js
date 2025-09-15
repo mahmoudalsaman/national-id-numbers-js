@@ -35,6 +35,7 @@ import * as DK from './nationalid/dk/cpr_number.js';
 import * as FI from './nationalid/fi/henkilotunnus.js';
 import * as NO from './nationalid/no/fodselsnummer.js';
 import * as SE from './nationalid/se/personnummer.js';
+import * as NL from './nationalid/nl/bsn.js';
 
 const COUNTRY_MODULES = {
   AL: ALB,
@@ -72,6 +73,7 @@ const COUNTRY_MODULES = {
   FI: FI,
   NO: NO,
   SE: SE,
+  NL: NL,
 };
 
 export class NationalID {
@@ -149,6 +151,7 @@ export {
   FI,
   NO,
   SE,
+  NL,
 };
 
 export * from './nationalid/constant.js';
