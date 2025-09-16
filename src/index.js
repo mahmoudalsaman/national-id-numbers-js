@@ -45,6 +45,26 @@ import * as MA from './nationalid/ma/cin.js';
 import * as TN from './nationalid/tn/cin.js';
 import * as DZ from './nationalid/dz/cin.js';
 import * as LY from './nationalid/ly/national_id.js';
+import * as AUS from './nationalid/aus/index.js';
+import * as CHL from './nationalid/chl/index.js';
+import * as COL from './nationalid/col/index.js';
+import * as HRV from './nationalid/hrv/index.js';
+import * as EST from './nationalid/est/index.js';
+import * as GRC from './nationalid/grc/index.js';
+import * as IRL from './nationalid/irl/index.js';
+import * as JPN from './nationalid/jpn/index.js';
+import * as LVA from './nationalid/lva/index.js';
+import * as LUX from './nationalid/lux/index.js';
+import * as MLT from './nationalid/mlt/index.js';
+import * as MEX from './nationalid/mex/index.js';
+import * as NZL from './nationalid/nzl/index.js';
+import * as PRT from './nationalid/prt/index.js';
+import * as RUS from './nationalid/rus/index.js';
+import * as SGP from './nationalid/sgp/index.js';
+import * as KOR from './nationalid/kor/index.js';
+import * as CHE from './nationalid/che/index.js';
+import * as TWN from './nationalid/twn/index.js';
+import * as LT from './nationalid/lt/index.js';
 
 const COUNTRY_MODULES = {
   AL: ALB,
@@ -92,6 +112,26 @@ const COUNTRY_MODULES = {
   TN: TN,
   DZ: DZ,
   LY: LY,
+  AU: AUS,
+  CL: CHL,
+  CO: COL,
+  HR: HRV,
+  EE: EST,
+  GR: GRC,
+  IE: IRL,
+  JP: JPN,
+  LV: LVA,
+  LU: LUX,
+  MT: MLT,
+  MX: MEX,
+  NZ: NZL,
+  PT: PRT,
+  RU: RUS,
+  SG: SGP,
+  KR: KOR,
+  CH: CHE,
+  TW: TWN,
+  LT: LT,
 };
 
 export class NationalID {
@@ -179,6 +219,26 @@ export {
   TN,
   DZ,
   LY,
+  AUS,
+  CHL,
+  COL,
+  HRV,
+  EST,
+  GRC,
+  IRL,
+  JPN,
+  LVA,
+  LUX,
+  MLT,
+  MEX,
+  NZL,
+  PRT,
+  RUS,
+  SGP,
+  KOR,
+  CHE,
+  TWN,
+  LT,
 };
 
 export * from './nationalid/constant.js';
