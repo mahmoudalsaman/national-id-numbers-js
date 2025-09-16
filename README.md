@@ -11,7 +11,7 @@
 
 ## ✨ Features
 
-- 🌍 **46 Countries Supported** - Comprehensive coverage across 6 continents
+- 🌍 **66 Countries Supported** - Comprehensive coverage across 6 continents
 - 🔍 **Smart Validation** - Advanced algorithms including Luhn, Modulo 11, and custom checksums
 - 📊 **Data Extraction** - Parse birth dates, gender, regions, and more from ID numbers
 - 🚀 **Zero Dependencies** - Lightweight and fast with no external dependencies
@@ -68,7 +68,7 @@ const canadaInfo = CA.SocialInsuranceNumber.parse('130-692-544');
 
 ## 🌍 Supported Countries
 
-### 🇪🇺 Europe (24 countries)
+### 🇪🇺 Europe (34 countries)
 | Country | Code | ID Type | Format | Example | Features |
 |---------|------|---------|--------|---------|----------|
 | 🇦🇱 Albania | AL | Identity Number | 13 digits | `1234567890123` | ✅ Validation |
@@ -85,6 +85,14 @@ const canadaInfo = CA.SocialInsuranceNumber.parse('130-692-544');
 | 🇭🇺 Hungary | HU | Személyi szám | 11 digits | `12345678905` | ✅ Parse + Validation |
 | 🇷🇴 Romania | RO | CNP | 13 digits | `1234567890123` | ✅ Parse + Validation |
 | 🇸🇰 Slovakia | SK | Rodné číslo | 10 digits | `1204156785` | ✅ Parse + Validation |
+| 🇪🇪 Estonia | EE | Isikukood | 11 digits | `12345678901` | ✅ Parse + Validation |
+| 🇬🇷 Greece | GR | AMKA | 11 digits | `12345678901` | ✅ Parse + Validation |
+| 🇮🇪 Ireland | IE | PPS Number | 7-8 chars | `1234567T` | ✅ Validation |
+| 🇱🇻 Latvia | LV | Personas kods | 11 digits | `12345678901` | ✅ Parse + Validation |
+| 🇱🇺 Luxembourg | LU | National Number | 13 digits | `1234567890123` | ✅ Parse + Validation |
+| 🇲🇹 Malta | MT | ID Card Number | 8 chars | `1234567M` | ✅ Validation |
+| 🇭🇷 Croatia | HR | OIB | 11 digits | `12345678903` | ✅ Validation |
+| 🇨🇭 Switzerland | CH | AHV Number | 13 digits | `7561234567890` | ✅ Validation |
 | 🇩🇪 Germany | DE | Tax ID | 11 digits | `12345678901` | ✅ Validation |
 | 🇪🇸 Spain | ES | DNI | 8 digits + letter | `12345678Z` | ✅ Validation |
 | 🇫🇷 France | FR | INSEE | 13 digits | `1234567890123` | ✅ Parse + Validation |
@@ -94,8 +102,10 @@ const canadaInfo = CA.SocialInsuranceNumber.parse('130-692-544');
 | 🇯🇴 Jordan | JO | National ID | 10 digits | `1234567890` | ✅ Validation |
 | 🇱🇰 Sri Lanka | LK | National ID | 10 digits + letter | `123456789V` | ✅ Parse + Validation |
 | 🇹🇷 Turkey | TR | National ID | 11 digits | `12345678901` | ✅ Validation |
+| 🇵🇹 Portugal | PT | NIC | 9 digits | `123456789` | ✅ Validation |
+| 🇷🇺 Russia | RU | СНИЛС | 11 digits | `123-456-789 01` | ✅ Validation |
 
-### 🌏 Asia (12 countries)
+### 🌏 Asia (15 countries)
 | Country | Code | ID Type | Format | Example | Features |
 |---------|------|---------|--------|---------|----------|
 | 🇦🇪 UAE | AE | Emirates ID | 15 digits | `784-1234-5678901-2` | ✅ Parse + Validation |
@@ -110,6 +120,10 @@ const canadaInfo = CA.SocialInsuranceNumber.parse('130-692-544');
 | 🇸🇦 Saudi Arabia | SA | National ID | 10 digits | `1234567890` | ✅ Parse + Validation |
 | 🇹🇭 Thailand | TH | National ID | 13 digits | `1234567890123` | ✅ Parse + Validation |
 | 🇻🇳 Vietnam | VN | National ID | 9 digits | `123456789` | ✅ Parse + Validation |
+| 🇯🇵 Japan | JP | My Number | 12 digits | `123456789012` | ✅ Validation |
+| 🇸🇬 Singapore | SG | NRIC | 9 chars | `S1234567A` | ✅ Parse + Validation |
+| 🇰🇷 South Korea | KR | RRN | 13 digits | `1234567890123` | ✅ Parse + Validation |
+| 🇹🇼 Taiwan | TW | National ID | 10 chars | `A123456789` | ✅ Parse + Validation |
 
 ### 🌍 Africa (6 countries)
 | Country | Code | ID Type | Format | Example | Features |
@@ -121,13 +135,18 @@ const canadaInfo = CA.SocialInsuranceNumber.parse('130-692-544');
 | 🇳🇬 Nigeria | NG | National ID | 11 digits | `12345678901` | ✅ Validation |
 | 🇹🇳 Tunisia | TN | CIN | 8 digits | `12345679` | ✅ Parse + Validation |
 
-### 🌎 Americas (4 countries)
+### 🌎 Americas (7 countries)
 | Country | Code | ID Type | Format | Example | Features |
 |---------|------|---------|--------|---------|----------|
 | 🇺🇸 United States | US | Social Security | 9 digits | `123-45-6789` | ✅ Validation |
 | 🇧🇷 Brazil | BR | CPF | 11 digits | `123.456.789-09` | ✅ Parse + Validation |
 | 🇨🇦 Canada | CA | SIN | 9 digits | `123-456-789` | ✅ Parse + Validation |
 | 🇦🇷 Argentina | AR | DNI | 7-8 digits | `12.345.678` | ✅ Parse + Validation |
+| 🇦🇺 Australia | AU | TFN | 8-9 digits | `123456789` | ✅ Validation |
+| 🇨🇱 Chile | CL | RUT | 8-9 digits | `12.345.678-5` | ✅ Validation |
+| 🇨🇴 Colombia | CO | Cédula | 6-10 digits | `1234567890` | ✅ Validation |
+| 🇲🇽 Mexico | MX | CURP | 18 chars | `ABCD123456HEFGHI01` | ✅ Parse + Validation |
+| 🇳🇿 New Zealand | NZ | IRD | 8-9 digits | `123456789` | ✅ Validation |
 
 ## 📖 Advanced Usage
 
@@ -218,7 +237,7 @@ npm run test:coverage
 
 ## 📊 Statistics
 
-- **Total Countries**: 27 implemented
+- **Total Countries**: 66 implemented
 - **Total Tests**: 131+ tests
 - **Coverage**: 6 continents
 - **Bundle Size**: ~15KB (minified)
