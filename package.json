@@ -1,6 +1,6 @@
 {
   "name": "national-id-numbers",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Validate and parse national identification numbers by country code",
   "type": "module",
   "main": "src/index.js",
