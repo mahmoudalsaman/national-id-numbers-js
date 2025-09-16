@@ -25,6 +25,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 - Nothing yet
 
+## [1.12.0] - 2025-01-14
+
+### Added
+- **Libya (LY) Support**: Added National ID validation and parsing
+  - Format: `1234567890` (10 digits)
+  - Length: 10 digits
+  - Checksum: No checksum validation (basic format validation only)
+  - Parsing: Extracts number, gender, birth date, year, month, and day
+  - Gender Detection: Based on serial number parity (even = female, odd = male)
+  - Birth Date: Supports 1900s and 2000s centuries
+  - Validation: Supports Libyan National ID format
+  - Names: National ID, Libyan National ID, Libyan ID
+
+### Changed
+- **README.md**: Updated country tables to include Libya
+- **Country Count**: Increased from 45 to 46 countries
+
+### Technical Details
+- **Algorithm**: Basic format validation (no checksum)
+- **Century Detection**: Year range-based century determination
+- **Gender Detection**: Serial number parity check
+- **Date Parsing**: Full birth date extraction with century handling
+
 ## [1.11.0] - 2025-01-14
 
 ### Added
@@ -515,6 +538,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 | Version | Date | Countries | Major Features |
 |---------|------|-----------|----------------|
+| 1.12.0 | 2025-01-14 | 46 | Libya National ID support |
 | 1.11.0 | 2025-01-14 | 45 | Algeria CIN support |
 | 1.10.0 | 2025-01-14 | 44 | Tunisia CIN support |
 | 1.9.0 | 2025-01-14 | 43 | Morocco CIN support |

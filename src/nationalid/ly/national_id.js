@@ -1,0 +1,71 @@
+import { Gender } from '../constant.js';
+import { validateRegexp, aliasOf } from '../util.js';
+
+const REGEXP = /^(\d{10})$/;
+
+export class NationalID {
+  static METADATA = {
+    iso3166_alpha2: 'LY',
+    min_length: 10,
+    max_length: 10,
+    parsable: true,
+    checksum: false,
+    regexp: REGEXP,
+    alias_of: null,
+    names: ['National ID', 'Libyan National ID', 'Libyan ID'],
+    links: ['https://en.wikipedia.org/wiki/National_identification_number#Libya'],
+    deprecated: false,
+  };
+
+  static validate(idNumber) {
+    if (!validateRegexp(idNumber, REGEXP)) {
+      return false;
+    }
+    return this.parse(idNumber) !== null;
+  }
+
+  static parse(idNumber) {
+    const match = idNumber.match(REGEXP);
+    if (!match) {
+      return null;
+    }
+
+    const digits = idNumber;
+    
+    // Extract birth date and gender from National ID
+    const year = parseInt(digits.slice(0, 2));
+    const month = parseInt(digits.slice(2, 4));
+    const day = parseInt(digits.slice(4, 6));
+    
+    // Determine century based on year range
+    let century = 2000;
+    if (year >= 0 && year <= 30) {
+      century = 2000;
+    } else if (year >= 31 && year <= 99) {
+      century = 1900;
+    }
+    
+    const actualYear = century + year;
+    const birthDate = `${actualYear}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+    
+    // Determine gender based on last digit of serial number
+    const serialNumber = parseInt(digits.slice(6, 10));
+    const gender = (serialNumber % 2 === 0) ? Gender.FEMALE : Gender.MALE;
+    
+    return {
+      number: idNumber,
+      gender: gender,
+      birthDate: birthDate,
+      year: actualYear,
+      month: month,
+      day: day,
+    };
+  }
+
+  static checksum(idNumber) {
+    // Libyan National ID doesn't use checksum validation
+    return true;
+  }
+}
+
+export const NationalIDAlias = aliasOf(NationalID);
