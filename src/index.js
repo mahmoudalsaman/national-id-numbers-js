@@ -43,6 +43,7 @@ import * as RO from './nationalid/ro/cnp.js';
 import * as SK from './nationalid/sk/rodne_cislo.js';
 import * as MA from './nationalid/ma/cin.js';
 import * as TN from './nationalid/tn/cin.js';
+import * as DZ from './nationalid/dz/cin.js';
 
 const COUNTRY_MODULES = {
   AL: ALB,
@@ -88,6 +89,7 @@ const COUNTRY_MODULES = {
   SK: SK,
   MA: MA,
   TN: TN,
+  DZ: DZ,
 };
 
 export class NationalID {
@@ -173,6 +175,7 @@ export {
   SK,
   MA,
   TN,
+  DZ,
 };
 
 export * from './nationalid/constant.js';
